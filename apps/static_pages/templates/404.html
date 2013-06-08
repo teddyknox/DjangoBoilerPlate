@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+
+{% block css %}<link type="text/css" rel="stylesheet" href="{% static 'css/static_pages.css' %}"/>{% endblock %}
+{% block js %}<script type="text/javascript" src="{% static 'js/static_pages.js' %}"></script>{% endblock %}
+
+{% block title %}Page not found{% endblock %}
+
+{% block content %}
+<h3>404 Page not found</h3>
+
+<p>Sorry, but the requested page could not be found.</p>
+{% endblock %}
